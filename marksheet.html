@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+// signup 
+var name =prompt("Enter your Name ");
+var email =prompt("Enter your Email ");
+var pass =prompt("Enter your Pass ");
+var cpass =prompt("Enter your Confirm Pass");
+  
+// login
+
+if (pass == cpass) {
+
+    var emaillog = prompt("Enter your Email");
+    var passlog = prompt("Enter your Email");
+}
+ document.write(Welcome to our Website );
+
+let eng = parseFloat(prompt("Enter your English marks"));
+let Urd = parseFloat(prompt("Enter your Urdu marks"));
+let math = parseFloat(prompt("Enter your Maths marks"));
+let bio = parseFloat(prompt("Enter your Biology marks"));
+let chem = parseFloat(prompt("Enter your Chemistry marks"));
+let phys = parseFloat(prompt("Enter your Physic marks"));
+let sind = parseFloat(prompt("Enter your Sindhi marks"));
+
+
+let obtainedmarks = eng + urd + math + boi + chem + phys + sind ;
+
+let perc = (obtainedmarks / 600 ) *100
+
+document.write("Obtained marks" + obtainedmarks +"<br>")\
+
+document.write("Percentage" + perc.toFixed + "%" +"<br>")
+
+if(perc <= 100 && perc >= 80){ 
+    
+    document.write  ("Grade is A+")  
+ }
+  
+ else if(perc <= 80 && perc >= 70){ 
+    
+    document.write  ("Grade is A")  
+ }
+  
+ else if(perc <= 70 && perc >= 60){ 
+    
+    document.write  ("Grade is B") 
+  }
+
+ else  if(perc <= 60 && perc >= 50){ 
+    
+    document.write  ("Grade is C")  
+ }
+    else if(perc <= 50 && perc >= 40){ 
+    
+    document.write  ("Grade is D")  
+}
+
+else{
+document.write(fail)
+
+  }
+
+
+  else {
+           document.write("invaild email or password")
+
+ }
+  
+ else {
+
+    document.write("your pass doesnt match")
+ }
+
+
+
+    </script>
+</body>
+</html>
